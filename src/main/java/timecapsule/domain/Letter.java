@@ -19,6 +19,7 @@ public class Letter {
     private Long id;
 
     private String title;
+
     @Lob
     private String content;
     private String password;

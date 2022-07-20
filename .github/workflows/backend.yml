@@ -17,9 +17,9 @@ on:
       - labeled
 
 jobs:
-  run_if_label_matches:
+  build:
     runs-on: ubuntu-latest
-    if: github.event.label.name == 'backend'
+    if: contains(github.event.pull_request.labels.*.name, 'backend')
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11

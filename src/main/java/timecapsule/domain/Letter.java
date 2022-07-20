@@ -23,4 +23,8 @@ public class Letter {
     private String content;
     private String password;
 
+
+
+
+
 }

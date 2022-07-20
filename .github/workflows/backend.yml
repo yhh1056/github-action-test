@@ -14,6 +14,8 @@ on:
     branches: [ "main" ]
   issues:
     types:
+      - reopened
+      - opened
       - labeled
 
 jobs:

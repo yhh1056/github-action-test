@@ -5,4 +5,5 @@ import timecapsule.domain.Letter;
 
 public interface LetterRepository extends JpaRepository<Letter, Long> {
 
+
 }

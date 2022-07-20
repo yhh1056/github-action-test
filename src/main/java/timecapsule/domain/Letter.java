@@ -20,6 +20,7 @@ public class Letter {
     private String title;
     @Lob
     private String content;
+
     private String password;
 
 }

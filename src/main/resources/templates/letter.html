@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>글 목록</h1>
+
+<table border="1">
+    <tr>
+        <th>제목</th>
+        <th>보러가기</th>
+    </tr>
+    <tr th:each="letter : ${letters}">
+        <td th:text="${letter.title}"></td>
+        <td><a th:href="@{/letters/(id=${letter.id})}">클릭</a></td>
+    </tr>
+</table>
+
+</body>
+</html>

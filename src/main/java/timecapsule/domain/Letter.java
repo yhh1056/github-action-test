@@ -17,6 +17,7 @@ public class Letter {
     @Id
     @GeneratedValue
     private Long id;
+
     private String title;
     @Lob
     private String content;
